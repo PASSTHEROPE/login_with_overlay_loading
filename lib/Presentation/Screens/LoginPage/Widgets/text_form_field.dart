@@ -29,14 +29,14 @@ class InputField extends StatelessWidget {
         },
         decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.blue),
+                borderSide: const BorderSide(color: Colors.green),
                 borderRadius: kBorderRadius),
             focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: Colors.blue),
+                borderSide: const BorderSide(color: Colors.green),
                 borderRadius: kBorderRadius),
-            hintStyle: const TextStyle(color: Colors.blue),
+            hintStyle: const TextStyle(color: Colors.green),
             filled: true,
-            fillColor: Colors.transparent,
+            fillColor: Colors.white,
             hintText: label,
             prefixIcon: icons),
       ),

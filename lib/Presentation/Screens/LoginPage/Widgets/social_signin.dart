@@ -11,15 +11,15 @@ class SocialSignIn extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        buildBtn("Sign in with Facebook", Colors.blue, Icons.facebook),
+        buildBtn("Sign In", Colors.blue, Icons.facebook_sharp),
         const WidthSpacer(myWidth: 15.5),
-        buildBtn("Sign in with Gmail", Colors.red, Icons.mail)
+        buildBtn("Sign In", Colors.orange, Icons.mail)
       ],
     );
   }
 
   Widget buildBtn(String text, Color btnColor, IconData iconData) => Container(
-        width: 192,
+        width: 140,
         height: 40,
         decoration: BoxDecoration(
           borderRadius: kBorderRadius,

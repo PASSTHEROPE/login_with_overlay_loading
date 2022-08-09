@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       body: BlocConsumer<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state is AuthError) {
@@ -82,15 +82,15 @@ class _MyHomePageState extends State<MyHomePage> {
             InputField(
               focusNode: usernameFocus,
               textController: userName,
-              label: "Username",
-              icons: const Icon(Icons.person, color: Colors.blue),
+              label: "UserID",
+              icons: const Icon(Icons.person, color: Colors.lightGreenAccent),
             ),
             HeightSpacer(myHeight: kSpacing),
             InputField(
               focusNode: passwordFocus,
               textController: password,
               label: "Password",
-              icons: const Icon(Icons.lock, color: Colors.blue),
+              icons: const Icon(Icons.lock, color: Colors.lightGreenAccent),
             ),
             HeightSpacer(myHeight: kSpacing),
             LoginBtn(
@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
               password: password,
             ),
             HeightSpacer(myHeight: kSpacing),
-            const SocialSignIn(),
+             const SocialSignIn(),
           ],
         ),
       );
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
   ScaffoldFeatureController buildErrorLayout() =>
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please enter username/password!'),
+          content: Text('Please provide login credentials'),
         ),
       );
 
